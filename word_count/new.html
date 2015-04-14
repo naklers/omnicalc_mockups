@@ -2,9 +2,8 @@
 <html>
 <head>
   <title>Omnicalc</title>
-
-  <!-- Connect to Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!-- Connect to Bootswatch Paper CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/paper/bootstrap.min.css">
 
   <!-- Connect to Font Awesome CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -24,6 +23,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <nav class="navbar navbar-default">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><i class="fa fa-calculator"></i> Omnicalc</a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="List col-md-3">
+        <div class="list-group">
+          <a href="../word_count/new.html" class="list-group-item">
+            <p class="list-group-item-text">
+              <i class="fa fa-book"></i>
+              Word Count
+            </p>
+          </a>
+          <a href="../loan_payment/new.html" class="list-group-item">
+            <p class="list-group-item-text">
+              <i class="fa fa-money"></i>
+              Loan Payment
+            </p>
+          </a>
+          <a href="../time_between/new.html" class="list-group-item">
+            <p class="list-group-item-text">
+              <i class="fa fa-clock-o"></i>
+              Time Between
+            </p>
+          </a>
+          <a href="../descriptive_statistics/new.html" class="list-group-item">
+            <p class="list-group-item-text">
+              <i class="fa fa-bar-chart"></i>
+              Descriptive Statistics
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">New Word Count Calculation</h3>
+          </div>
+          <div class="panel-body">
+          <form action="../word_count/results.html" class="form-horizontal">
+              <div class="form-group">
+              <label for=action="/word_count/results" "free-text1" class="col-sm-2 control-label">Text</label>
+                <div class="col-sm-10">
+                  <textarea name="user_text" class="form-control" rows="3" placeholder="Enter your text" id="user_text"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="freetext1" class="col-sm-2 control-label">Special Word (optional)</label>
+                <div class="col-sm-10">
+                  <input class="form-control" id="freetext1" type="text" placeholder="Enter a word to count the occurrences of">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row"></div>
+  </div>
 
 </body>
 </html>
